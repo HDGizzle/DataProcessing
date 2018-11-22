@@ -1,0 +1,112 @@
+<!--Name: Gijs Beerens-->
+<!--Student Number: 10804463-->
+<!--Purpose: body to showcase data of apple stocks-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apple Data</title>
+  </head>
+  <body>
+    <h1>Gijs Beerens - 10804463 - Javascript</h1>
+    <p>Data source: https://finance.yahoo.com/</p>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <script type="text/javascript">
+      var fileName = "appletje.json";
+      var txtFile = new XMLHttpRequest();
+      txtFile.onreadystatechange = function() {
+          if (txtFile.readyState === 4 && txtFile.status == 200) {
+
+              // parse JSON file to variable
+              file = JSON.parse(txtFile.responseText);
+
+              // define empty list for parsing
+              var volume = [];
+
+              // iterate over every volume item & add to volume array
+              for (let i = 0; i <= 21; i++){
+                var yAxis = file[i].Volume;
+
+                // simplify numbers
+                yAxis = yAxis / 1000000;
+                volume.push(yAxis);
+              }
+
+            function graph() {
+              // define canvas and ctx
+              const canvas = document.getElementById('canvas');
+              const ctx = canvas.getContext('2d');
+
+              // define parameter variables
+              var width = 800;
+              var height = 250;
+              var border = 20;
+              var offset = (1 / (volume.length - 1)) * width;
+
+              // allows data to expand relative to table size
+              function offsetHeight(o) {
+                return (volume[o] / 100) * height;
+              }
+
+              // line and frame color
+              ctx.strokeStyle = "red";
+              ctx.strokeRect(0, 0, width, height)
+
+              // insert graph info
+              ctx.font = "22px Arial";
+              ctx.fillText("Sales volume Apple shares 19/10/18 - 19/11/18", width / 5, height + 45);
+              ctx.fillText("X 1.000.000", width + 30, height / 2)
+
+              // loop for iterating over y axis
+              for (var z = 1; z <= 9; z++) {
+                // condition for drawing rasterline with given thickness
+                if (z % 2 == 0) {
+                  ctx.fillRect(0, (height / 10) * z, width, 1);
+                }
+                else {
+                  ctx.fillRect(0, (height / 10) * z, width, 0.3);
+                }
+                // insert y axis numbers
+                ctx.font = "15px Arial"
+                ctx.fillText(100 - (10 * z), width + 5, ((height / 10) * z) + 4)
+              }
+
+              // insert dates along x axis
+              ctx.font = "13px Arial"
+              ctx.fillText("22/10", 1 * offset - 13, height + 12);
+              ctx.fillText("26/10", 5 * offset - 13, height + 12);
+              ctx.fillText("29/10", 6 * offset - 9, height + 12);
+              ctx.fillText("02/11", 10 * offset - 13, height + 12);
+              ctx.fillText("05/11", 11 * offset - 9, height + 12);
+              ctx.fillText("09/11", 15 * offset - 13, height + 12);
+              ctx.fillText("12/11", 16 * offset - 9, height + 12);
+              ctx.fillText("16/11", 20 * offset - 13, height + 12);
+              ctx.fillText("19/11", 21 * offset - 9, height + 12);
+
+              // starting point for line
+              ctx.moveTo(0, offsetHeight(0));
+
+              // loop iterating over x axis
+              for (var j = 1; j < volume.length; j++) {
+                // condition for rasterline thickness
+                if (j % 2 == 0) {
+                  ctx.fillRect(j * offset, 0, 1,height);
+                }
+                else {
+                  ctx.fillRect(j * offset, 0, 0.3,height);
+                }
+
+                // draw line & place dot
+                ctx.lineTo(j * offset, height - offsetHeight(j));
+                ctx.fillRect(j * offset - 1, height - offsetHeight(j),4,4);
+                }
+              ctx.stroke();
+            }
+            graph()
+          }
+      }
+      txtFile.open("GET", fileName);
+      txtFile.send();
+    </script>
+  </body>
+</html>
