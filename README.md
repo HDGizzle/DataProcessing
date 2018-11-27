@@ -4,4 +4,4 @@ Data processing minor programmeren
 Gijs Beerens
 10804463
 
-GitHub pages: https://hdgizzle.github.io/DataProcessing/Homework/Week_4/index.html
+GitHub pages: https://hdgizzle.github.io/DataProcessing/Homework/Week_4/index.html --> speciaal voor jou gefixt nigel
