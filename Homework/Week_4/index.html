@@ -1,0 +1,123 @@
+<!-- Gijs Beerens - 10804463-->
+<!-- Sources:
+https://codepen.io/jackdbd/pen/NAEdBG
+https://bl.ocks.org/caravinden/d04238c4c9770020ff6867ee92c7dac1
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renewable energy bar chart</title>
+  </head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//d3js.org/d3.v5.min.js"></script>
+
+    <script>
+      // add text info at top of page
+      d3.select("body").append("h1").text("Gijs Beerens - 10804463")
+      d3.select("body").append("p").text("Average annual value of renewable energy worldwide")
+      d3.select("body").append("p").text("This bar chart visualizes the average mondial progression of renewable energy from 1960 till 2016")
+
+    </script>
+      <!-- define bar chart frame and size  -->
+    <svg width="1500" height="500"></svg>
+
+    <!-- style page  -->
+    <style>
+    	.bar {
+    	  fill: red;
+    	}
+    	.bar:hover {
+    	  fill: blue;
+
+    	}
+      h1 {
+        font-family: "Comic Sans MS";
+        color: navy;
+      }
+
+      p {
+          font-family: "Comic Sans MS";
+          font-size: 20px;
+          color: navy;
+      }
+      body {
+        background-image: url("crayz.jpg");
+        font-color: red;
+      }
+
+      </style>
+    <script>
+      // define svg boundaries and margins for histogram info
+      var svg = d3.select("svg"),
+      margin = {
+        top: 20, right: 20, bottom: 30, left: 50
+      },
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom,
+      g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      // scale bar size and padding horizontally
+      var x = d3.scaleBand()
+      	.rangeRound([0, width])
+      	.padding(0.13);
+
+      // scale bar size vertically
+      var y = d3.scaleLinear()
+      	.rangeRound([height, 0]);
+
+      // define tooltip
+      const tooltip = d3.select('body').append('div')
+        .attr('class', 'tooltip')
+        .style('opacity', 0);
+
+
+      // load json file
+      d3.json("Week4data.json").then(function (data) {
+        // define function for bar x and y data
+        x.domain(data.map(function(d){ return d.Time}));
+        y.domain([0, d3.max(data, function(d){return d.Value})]);
+
+        // add x axis information
+      	g.append("g")
+      	.attr("transform", "translate(0," + height + ")")
+      	.call(d3.axisBottom(x))
+
+        // add y axis information
+      	g.append("g")
+      	.call(d3.axisLeft(y))
+      	.append("text")
+      	.attr("fill", "#000")
+      	.attr("transform", "rotate(-90)")
+      	.attr("y", 8)
+      	.attr("dy", "1em")
+      	.attr("text-anchor", "end")
+      	.text("Value in $ millions");
+
+        // add bars and tooltip
+      	g.selectAll(".bar")
+      	.data(data)
+      	.enter().append("rect")
+      	.attr("class", "bar")
+      	.attr("x", function (d) {
+      		return x(d.Time);
+      	})
+      	.attr("y", function (d) {
+      		return y(Number(d.Value));
+      	})
+      	.attr("width", x.bandwidth())
+      	.attr("height", function (d) {
+      		return height - y(Number(d.Value));
+      	})
+        .on('mouseover', (d) => {
+          tooltip.transition().duration(200).style('opacity', 0.9);
+          tooltip.html(`Value: <span>${d.Value}</span>`)
+          .style('left', `${d3.event.layerX}px`)
+          .style('top', `${(d3.event.layerY - 28)}px`);
+        })
+        .on('mouseout', () => tooltip.transition().duration(500).style('opacity', 0));
+      });
+    </script>
+  </body>
+</html>
