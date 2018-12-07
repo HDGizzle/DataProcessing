@@ -1,0 +1,35 @@
+body {
+  background-image: url("http://www.sothebys.com/content/dam/stb/lots/L17/L17021/285L17021_9CBZZ.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: LightSlateGray;
+  text-align: left;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.legend {
+  padding: 5px;
+  font: 14px sans-serif;
+}
+
+.axis { font: 12px sans-serif;
+
+ }
+
+ .tooltip {
+   font: 14px sans-serif;
+ }
+
+.m {
+  text-align: right;
+  font: 14px sans-serif;
+  color: Orange;
+}
