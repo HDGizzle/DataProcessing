@@ -1,0 +1,102 @@
+<!-- Gijs Beerens - 10804463 -->
+<!-- CSS template source: https://www.w3schools.com/w3css/tryw3css_templates_parallax.html -->
+
+<!DOCTYPE html>
+<html>
+<title>Data Processing Week 6: linked views</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="linkedviews.css">
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="linkedviews.js"></script>
+
+<body>
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#ASSIGNMENT" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ASSIGNMENT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#ASSIGNMENT" class="w3-bar-item w3-button" onclick="toggleFunction()">ASSIGNMENT</a>
+  </div>
+</div>
+
+<!-- banner met strandfoto en data processing titel -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-topmiddle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> DATA <span class="w3-hide-small">PROCESSING</span> 2018</span>
+  </div>
+</div>
+
+<!-- Container (Over mij Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">OVER MIJ</h3>
+  <p class="w3-center"><em>Succes is een keuze...</em></p>
+  <p>Het was me een periode. Scriptie, Heuristieken en dan ook nog Data Processing. Vermoeiend wel. Ik herinner het mij nog goed... Het begin van de minor in september, ik snapte er weinig van.
+  Gelukkig is de mens een weerbarstige soort. Programmeren 2 met hakken over de sloot gehaald, en deze periode gelijk door met de ècht lastige stof. Waar heuristieken amper voor problemen zorgde, heeft
+data toch behoorlijk zijn best gedaan om mij flink te tarten. Er was één trend die zich hardnekkig heeft doorgezet: het ontvangen van een 5.2. De ene week wegens het ontbreken van een gestructureerde repository, de andere week
+ vanwege een incorrecte github link waar je je niet bewust van bent. Shit happens... Eens zien of we het deze week voor elkaar krijgen om wèl een voldoende te halen...</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="pasfoto.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- personal info + photo -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h3><br>Naam:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gijs Beerens<br><br>
+          Student nr:&nbsp;&nbsp;&nbsp;&nbsp;10804463<br><br>
+          Vak:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Processing<br><br>
+          E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GJBeerens@hotmail.com
+      </h3>
+    </div>
+  </div>
+  <!-- resultaten overzicht -->
+  <p class="w3-large w3-center w3-padding-16">Resultaten tot nu toe:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Cijfer 5.2</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Cijfer 8.4</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:20%">20%</div>
+  </div>
+</div>
+
+<!-- 0101 banner met assignment titel -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ASSIGNMENT</span>
+  </div>
+</div>
+
+<!-- Assignment intro en data -->
+<div class="w3-content w3-container w3-padding-64" id="ASSIGNMENT">
+  <h3 class="w3-center">TheHappy Planet Index</h3>
+  <p class="w3-center"><em>The Happy Planet Index measures what matters: sustainable wellbeing for all. It tells us how well nations
+    are doing at achieving long, happy, sustainable lives. The Happy Planet Index provides a compass to guide nations, and shows that
+    it is possible to live good lives without costing the Earth.
+  </em></p>
+  <plot align="center"></plot>
+  <script>
+    scatterplot("JSONlinkedviews.json");
+  </script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+hpiRank,Country,LifeExpectancy,WellBeing,Footprint,InequalityOutcomes,hpi,Region
+1,Costa Rica,79.1,7.3,2.8,15%,44.7,Americas
+2,Mexico,76.4,7.3,2.9,19%,40.7,Americas
+3,Colombia,73.7,6.4,1.9,24%,40.7,Americas
+6,Panama,77.2,6.9,2.8,19%,39.5,Americas
+7,Nicaragua,74.3,5.4,1.4,25%,38.7,Americas
+10,Ecuador,75.4,6,2.2,22%,37,Americas
+11,Jamaica,75.3,5.6,1.9,21%,36.9,Americas
+14,Uruguay,76.9,6.4,2.9,18%,36.1,Americas
+17,El Salvador,72.5,5.9,2.1,22%,35.6,Americas
+19,Argentina,75.9,6.5,3.1,16%,35.2,Americas
+21,Peru,74.1,5.8,2.3,21%,34.6,Americas
+23,Brazil,73.9,6.9,3.1,22%,34.3,Americas
+26,Guatemala,71.4,5.9,1.9,27%,34.2,Americas
+27,Belize,69.8,6.1,2.5,18%,33.8,Americas
+29,Venezuela,73.9,7.1,3.6,19%,33.6,Americas
+35,Chile,81.1,6.6,4.4,14%,31.7,Americas
+45,Dominican Republic,73.1,4.8,1.5,30%,30.3,Americas
+57,Haiti,62.1,4.4,0.6,37%,28.6,Americas
+65,Honduras,72.8,4.6,1.7,31%,27.2,Americas
+75,Suriname,70.8,6.3,4.3,19%,25.4,Americas
+85,Canada,81.7,7.4,8.2,9%,23.9,Americas
+91,Paraguay,72.6,5.8,4.2,22%,23.3,Americas
+92,Bolivia,67.5,6,3,35%,23.3,Americas
+108,United States of America,78.8,7,8.2,13%,20.7,Americas
+130,Trinidad and Tobago,70.1,6.4,7.9,21%,15.7,Americas
+4,Vanuatu,71.3,6.5,1.9,22%,40.6,Asia Pacific
+5,Vietnam,75.5,5.5,1.7,19%,40.3,Asia Pacific
+8,Bangladesh,70.8,4.7,0.7,27%,38.4,Asia Pacific
+9,Thailand,74.1,6.3,2.7,15%,37.3,Asia Pacific
+16,Indonesia,68.5,5.4,1.6,21%,35.7,Asia Pacific
+20,Philippines,67.9,5,1.1,26%,35,Asia Pacific
+28,Sri Lanka,74.6,4.2,1.3,17%,33.8,Asia Pacific
+36,Pakistan,65.7,5.1,0.8,40%,31.5,Asia Pacific
+38,New Zealand,81.4,7.2,5.6,8%,31.3,Asia Pacific
+42,Nepal,68.8,4.2,1,27%,30.5,Asia Pacific
+46,Malaysia,74.4,5.9,3.7,10%,30.3,Asia Pacific
+50,India,67.3,4.6,1.2,31%,29.2,Asia Pacific
+56,Bhutan,68.7,5.6,2.3,27%,28.6,Asia Pacific
+58,Japan,83.2,6,5,9%,28.3,Asia Pacific
+72,China,75.4,5.1,3.4,17%,25.7,Asia Pacific
+74,Cambodia,67.5,3.9,1.2,28%,25.6,Asia Pacific
+80,South Korea,81.3,6,5.7,11%,24.8,Asia Pacific
+81,Myanmar,65.5,4.4,1.4,32%,24.7,Asia Pacific
+105,Australia,82.1,7.2,9.3,8%,21.2,Asia Pacific
+123,Hong Kong,83.6,5.5,8.8,10%,16.8,Asia Pacific
+136,Mongolia,68.6,4.9,6.1,22%,14.3,Asia Pacific
+12,Norway,81.3,7.7,5,7%,36.8,Europe
+15,Spain,82.2,6.3,3.7,10%,36,Europe
+18,Netherlands,81.2,7.5,5.3,4%,35.3,Europe
+24,Switzerland,82.6,7.8,5.8,6%,34.3,Europe
+32,Denmark,79.8,7.5,5.5,7%,32.7,Europe
+34,United Kingdom,80.4,6.9,4.9,9%,31.9,Europe
+37,Finland,80.4,7.4,5.9,6%,31.3,Europe
+39,Iceland,82.2,7.6,6.4,5%,31.1,Europe
+41,Cyprus,79.8,6.2,4.2,12%,30.7,Europe
+43,Austria,81,7.4,6.1,7%,30.5,Europe
+44,France,81.8,6.6,5.1,9%,30.4,Europe
+48,Ireland,80.5,7,5.6,8%,30,Europe
+49,Germany,80.6,6.7,5.3,8%,29.8,Europe
+53,Malta,80.2,6,4.4,13%,29,Europe
+60,Italy,82.7,5.8,4.6,12%,28.1,Europe
+61,Sweden,81.8,7.6,7.3,6%,28,Europe
+79,Portugal,80.3,5,3.9,16%,24.8,Europe
+87,Belgium,80.4,6.9,7.4,9%,23.7,Europe
+89,Greece,80.5,5.1,4.4,16%,23.6,Europe
+139,Luxembourg,81.1,7,15.8,7%,13.2,Europe
+22,Palestine,72.6,4.6,1.2,24%,34.5,Middle East and North Africa
+30,Algeria,74.3,5.6,2.1,24%,33.3,Middle East and North Africa
+33,Morocco,73.4,5,1.7,25%,32.7,Middle East and North Africa
+54,Israel,81.9,7.1,6.2,8%,28.8,Middle East and North Africa
+67,Iraq,69,4.7,1.9,27%,26.5,Middle East and North Africa
+68,Turkey,74.7,5.3,3.3,19%,26.4,Middle East and North Africa
+71,Tunisia,74.6,4.5,2.3,22%,26.2,Middle East and North Africa
+84,Iran,74.8,4.6,2.8,23%,24,Middle East and North Africa
+86,Egypt,70.7,4.2,2.2,23%,23.8,Middle East and North Africa
+94,Yemen,63.3,4.1,1,39%,22.8,Middle East and North Africa
+100,Lebanon,78.8,4.6,3.8,19%,21.9,Middle East and North Africa
+106,Oman,76.3,6.9,7.5,13%,21.1,Middle East and North Africa
+110,Afghanistan,59.7,3.8,0.8,43%,20.2,Middle East and North Africa
+113,Syria,70.4,3.2,1.5,30%,19.1,Middle East and North Africa
+13,Albania,77.3,5.5,2.2,17%,36.8,Post-communist
+25,Tajikistan,69,4.5,0.9,26%,34.2,Post-communist
+31,Kyrgyzstan,69.7,5.2,1.9,18%,33.1,Post-communist
+40,Georgia,74.6,4.3,1.6,20%,31.1,Post-communist
+47,Croatia,77,6,3.9,12%,30.2,Post-communist
+51,Uzbekistan,68.2,6,2.3,30%,29.1,Post-communist
+52,Serbia,74.5,5.2,2.7,19%,29,Post-communist
+55,Romania,74.3,5.2,2.7,19%,28.8,Post-communist
+59,Slovakia,75.9,5.9,4.1,13%,28.2,Post-communist
+62,Poland,76.9,5.9,4.4,11%,27.5,Post-communist
+64,Czech Republic,78.2,6.3,5.2,9%,27.3,Post-communist
+69,Hungary,74.9,4.7,2.9,15%,26.4,Post-communist
+70,Ukraine,70.3,5,2.8,17%,26.4,Post-communist
+73,Armenia,74.4,4.3,2.2,22%,25.7,Post-communist
+76,Bosnia and Herzegovina,76.2,4.8,3.1,19%,25.3,Post-communist
+78,Montenegro,75.8,5.2,3.8,16%,25.1,Post-communist
+82,Slovenia,80,6.1,5.8,10%,24.6,Post-communist
+90,Macedonia,75.1,4.6,3.3,18%,23.4,Post-communist
+102,Belarus,70.9,5.7,5.1,13%,21.7,Post-communist
+107,Lithuania,72.8,5.8,5.8,11%,21,Post-communist
+109,Bulgaria,73.9,4.2,3.3,19%,20.4,Post-communist
+114,Kazakhstan,68.6,5.8,5.6,18%,19.1,Post-communist
+116,Russia,69.5,5.6,5.7,16%,18.7,Post-communist
+118,Estonia,76.2,5.4,6.9,12%,17.9,Post-communist
+121,Latvia,73.6,5.1,6.3,14%,17.1,Post-communist
+134,Turkmenistan,65.3,5.5,5.5,31%,14.6,Post-communist
+63,Mauritius,74,5.5,3.5,17%,27.4,Sub Saharan Africa
+66,Ethiopia,62.8,4.6,1,36%,26.7,Sub Saharan Africa
+77,Zambia,58.4,5,1,41%,25.2,Sub Saharan Africa
+83,Kenya,60.3,4.5,1,38%,24.2,Sub Saharan Africa
+88,Mozambique,54.3,5,0.9,43%,23.7,Sub Saharan Africa
+93,Comoros,62.6,4,1,36%,23.1,Sub Saharan Africa
+95,Nigeria,52.1,5.5,1.2,44%,22.2,Sub Saharan Africa
+96,Liberia,60.2,4.4,1.2,38%,22.2,Sub Saharan Africa
+97,Tanzania,63.5,4,1.3,33%,22.1,Sub Saharan Africa
+98,Malawi,60.1,4.3,0.8,45%,22.1,Sub Saharan Africa
+99,Zimbabwe,53.7,5,1.4,37%,22.1,Sub Saharan Africa
+101,Senegal,65.4,3.7,1.2,33%,21.9,Sub Saharan Africa
+103,Namibia,64,4.7,2.5,26%,21.6,Sub Saharan Africa
+104,Ghana,61,5.1,2,38%,21.4,Sub Saharan Africa
+111,Rwanda,63.1,3.3,0.9,37%,19.6,Sub Saharan Africa
+112,Uganda,57.1,4.3,1.2,41%,19.4,Sub Saharan Africa
+115,Republic of Congo,61,3.9,1.3,40%,18.8,Sub Saharan Africa
+117,Mauritania,62.6,4.7,2.5,37%,18,Sub Saharan Africa
+119,Burkina Faso,58,4,1.2,43%,17.9,Sub Saharan Africa
+120,Gabon,63.3,4,2,36%,17.5,Sub Saharan Africa
+122,Niger,60,3.8,1.6,40%,16.8,Sub Saharan Africa
+124,Cameroon,54.6,4.2,1.2,47%,16.7,Sub Saharan Africa
+125,Lesotho,48.9,4.9,1.7,42%,16.7,Sub Saharan Africa
+126,Botswana,64.2,4.8,3.8,28%,16.6,Sub Saharan Africa
+127,Djibouti,61.3,4.4,2.2,42%,16.4,Sub Saharan Africa
+128,South Africa,56.3,5.1,3.3,33%,15.9,Sub Saharan Africa
+129,Guinea,57.7,3.7,1.4,42%,15.9,Sub Saharan Africa
+131,Burundi,55.8,3.4,0.8,48%,15.6,Sub Saharan Africa
+132,Swaziland,48.9,4.9,2,41%,15.5,Sub Saharan Africa
+133,Sierra Leone,49.8,4.5,1.2,50%,15.3,Sub Saharan Africa
+135,Cote d'Ivoire,50.8,3.8,1.3,45%,14.4,Sub Saharan Africa
+137,Benin,59.2,3.2,1.4,44%,13.4,Sub Saharan Africa
+138,Togo,58.6,2.9,1.1,43%,13.2,Sub Saharan Africa
+140,Chad,50.8,4,1.5,51%,12.8,Sub Saharan Africa
